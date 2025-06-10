@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louis-website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/e110590ce5.js" crossorigin="anonymous"></script>
+<link rel="icon" type="image/png" sizes="32x32" href="portfolio-images/LIntEdge2.png">
+</head>
+<body>
+    <div id="header">
+      <div class="container">
+        <nav>
+            <img src="portfolio-images/LIntEdge2.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            
+            <h1>Hi, I'm <span class="auto-type"></span></h1>
+        </div>
+      </div> 
+    </div>
+<!----about section part ------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="portfolio-images/images/louispic3.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Enthusiastic, reliable and friendly individual who works hard to achieve and surpass set goals. Adaptable, committed and organized with a lot of problem-solving experience. Good communicationskills and ability to speak many languages (English, French and Swahili). A quick learner, who always seeks learning opportunities, works well in a team as well as individually.
+                        Innovative, task-driven, proficiency in writing clean codes and implementation of new features according to users’ feedback. </p>
+                     <div class="tab-titles">
+                        <p class="tab-links  active-link" onmouseover="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onmouseover="opentab('experience')">Experience</p>
+                        <p class="tab-links"  onmouseover="opentab('education')">Education</p>
+                     </div>
+                     <div class="tab-contents  active-tab"  id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web development</span><br> Web/App development</li>
+                            <li><span>App development</span><br>Building Apps</li>
+                            <li><span>Programming Tools</span><br><br>PHP <i class="fa-brands fa-php"></i> <br> Javascript <i class="fa-brands fa-js"></i> <br> Html <i class="fa-brands fa-html5"></i>  <br>CSS <i class="fa-brands fa-css3"></i><br>Relational Database <br> React <i class="fa-brands fa-react"></i> <br>Jquery <br> Bootstrap <i class="fa-brands fa-bootstrap"></i></li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>August 2023-Current</span><br>Reservation Agent at   <a href="https://www.tymeglobal.com/">TGT</a></li>
+                            <li><span>2022-Current</span><br> Junior developer at   <a href="https://likonzi.com/">Likonzi</a></li>
+                            <li><span>2016-2022</span><br>Data processor at Pick and Pay</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>1995-2002</span><br>High school at <a href="https://www.facebook.com/p/College-imara-100064389831466/">Imara-College</a></li>
+                            <li><span>2012 jan-Aug</span><br> PC hardware architecture training at <a href="https://www.varsitycollege.co.za/">Varsity-Sandton</a></li>
+                            <li><span>2022</span><br>Web development training at Appbrewry</li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------Services---------->
+
+    <div id="service">
+        <div class="container">
+            <h1 class="subtitle">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design is a collaborative process involving designers, developers, content creators, and stakeholders, aimed at creating websites that are not only visually appealing but also functional, user-friendly, and aligned with the goals of the business or organization</p>
+                    <a href="https://developer.mozilla.org/">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web development</h2>
+                    <p>Web development is a dynamic field that requires continuous learning and adaptation to new technologies, tools, and best practices. Developers often collaborate with designers, content creators, and stakeholders to create functional, user-friendly, and visually appealing web experiences that meet business objectives and user needs.</p>
+                    <a href="https://www.w3schools.com/">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-adn"></i>
+                    <h2>App development</h2>
+                    <p>Application development is a collaborative effort involving developers, designers, testers, project managers, and stakeholders, aimed at creating functional, user-friendly, and efficient software solutions that address specific business or user needs.</p>
+                    <a href="https://roadmap.sh/">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-----Portfolio section---->
+
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <h4>Please click on the image below then the arrow to explore</h4>
+            <div class="work-list">
+                <div class="work">
+                    <img src="portfolio-images/images/mortgagepic2.png" >
+                    <div class="layer">
+                        <h3>Mortgage App</h3>
+                        <p>Mortgage calculator</p>
+                        <a href="https://lint2016.github.io/Mortgage-calculator/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="portfolio-images/images/diceimg.jpg" >
+                    <div class="layer">
+                        <h3>Game</h3>
+                        <p>Dice game</p>
+                        <a href="https://lint2016.github.io/Dicee-challenge-project/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="portfolio-images/recipes.pic_resized.jpg" >
+                    <div class="layer">
+                        <h3>Recipes App</h3>
+                        <p>Recipes App</p>
+                        <a href="https://lint2016.github.io/Recipe-App/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                
+                
+
+                    <div class="work hidden">
+                        <img src="portfolio-images\devBlog.jpg" >
+                        <div class="layer">
+                            <h3>DevLog App</h3>
+                            <p>Track your Dev Journey</p>
+                            <a href="https://lint2016.github.io/DevLog-Tracker/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work  hidden">
+                        <img src="portfolio-images/linttech.jpg" >
+                        <div class="layer">
+                            <h3>AI Powered App</h3>
+                            <p> Text summarizer</p>
+                            <a href="https://lint2016.github.io/AI-powered-summarizer/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work  hidden">
+                        <img src="portfolio-images/images/work-3.png" >
+                        <div class="layer">
+                            <h3>Text 2 speech App</h3>
+                            <p>Convert text to speech</p>
+                            <a href="https://lint2016.github.io/text-to-speech-/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+            </div>
+
+            <a id="more-content" class="btn" onclick="showMore()">See more</a>
+        </div>
+    </div>
+
+    <!-----Contact section------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>louiskapend2016@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-square-phone"></i>0671630558</p>
+                    <div class="social-icons">
+                <a href="https://x.com/Louiskapend"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://github.com/Lint2016"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/louis-diur-kapend-732033240/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="portfolio-images/images/Louis-kapend-2025.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <img src="portfolio-images/LIntEdge2.png" alt="" class="footer-image">
+            <p class="footer-paragraph">Copyright &#169 Louis Kapend </p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script src="folio.js"></script>
+      
+</body>
+</html>
