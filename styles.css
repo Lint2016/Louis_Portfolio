@@ -568,4 +568,7 @@ nav ul li {
 nav .fa-solid {
     display: block;
 }
+.footer-paragraph{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 }
