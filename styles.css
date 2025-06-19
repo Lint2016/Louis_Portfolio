@@ -78,7 +78,7 @@ nav {
     width: 100%;
 }
 
-/* Mobile menu button - hidden by default */
+/* Mobile menu button - hidden by default on desktop */
 .fa-bars, .fa-xmark {
     display: none;
     font-size: 25px;
@@ -92,6 +92,11 @@ nav {
 
 /* Mobile styles */
 @media only screen and (max-width: 768px) {
+    /* Show hamburger menu on mobile */
+    .fa-bars, .fa-xmark {
+        display: block;
+    }
+    
     /* Hide desktop menu items on mobile */
     #sidemenu {
         display: none;
