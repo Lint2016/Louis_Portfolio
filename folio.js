@@ -72,14 +72,24 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Handle window resize
     function handleResize() {
+        const sidemenu = document.getElementById('sidemenu');
+        const body = document.body;
+        
+        // If window is resized to desktop view, ensure menu is closed and reset
         if (window.innerWidth > 768) {
-            // Reset menu state on desktop
-            closemenu();
+            if (sidemenu && body) {
+                body.classList.remove('sidemenu-active');
+                sidemenu.classList.remove('active');
+            }
         }
     }
     
-    // Add resize event listener
-    window.addEventListener('resize', handleResize);
+    // Add resize event listener with debounce
+    let resizeTimer;
+    window.addEventListener('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(handleResize, 250);
+    });
 });
 
 // the codes below provide the sending of data entered on the form , to the googlesheet attached to this site

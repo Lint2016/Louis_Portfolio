@@ -78,7 +78,27 @@ nav {
     width: 100%;
 }
 
-/* Mobile menu button - hidden by default on desktop */
+/* Desktop navigation */
+#sidemenu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mobile menu button - hidden by default */
+.fa-bars, .fa-xmark {
+    display: none;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1000;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+}
+
+/* Mobile menu button - hidden by default */
 .fa-bars, .fa-xmark {
     display: none;
     font-size: 25px;
@@ -97,42 +117,39 @@ nav {
         display: block;
     }
     
-    /* Hide desktop menu items on mobile */
+    /* Hide desktop menu on mobile */
     #sidemenu {
         display: none;
         position: fixed;
-        right: -200px;
         top: 0;
+        right: -200px;
         width: 200px;
         height: 100vh;
         background: #ff004f;
         z-index: 999;
         transition: right 0.5s;
-        padding-top: 70px;
-        text-align: left;
-        padding-left: 20px;
+        padding: 70px 0 0 20px;
         flex-direction: column;
     }
-
+    
+    /* Show menu when active */
     #sidemenu.active {
-        display: flex;
         right: 0;
+        display: flex;
     }
-
+    
     #sidemenu li {
-        margin: 15px 0;
-    }
-
-    /* Show mobile menu button */
-    .fa-bars {
-        display: block;
-        position: fixed;
+        margin: 25px 0;
     }
 
     .sidemenu-active .fa-bars {
         display: none;
     }
 
+    .sidemenu-active .fa-xmark {
+        display: block;
+    }
+    
     .fa-xmark {
         display: none;
     }
